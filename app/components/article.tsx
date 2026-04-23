@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { articles } from "@/app/lib/post";
 
-export default function ArticlesSection() {
+export const ArticlesSection = () => {
   const categories = ["All", "Film", "Tech", "Facts"];
 
   const [page, setPage] = useState(1);
@@ -29,7 +29,6 @@ export default function ArticlesSection() {
       <h1 className="text-4xl font-bold mb-6 w-full text-center">
         Article<span className="text-blue-500">s</span>
       </h1>
-      {/* CATEGORY FILTER */}
       <div className="flex justify-center gap-4 mb-10 flex-wrap">
         {categories.map((cat) => (
           <button
@@ -48,8 +47,6 @@ export default function ArticlesSection() {
           </button>
         ))}
       </div>
-
-      {/* GRID */}
       <div className="grid md:grid-cols-5 gap-4 max-w-6xl mx-auto">
         {currentArticles.map((a) => {
           const isLong = a.content.split(" ").length > 10;
@@ -59,20 +56,13 @@ export default function ArticlesSection() {
               key={a.id}
               className="bg-zinc-900 border border-zinc-800 p-4 rounded-lg hover:border-blue-500 transition"
             >
-              {/* TITLE */}
               <h3 className="font-bold mb-2">{a.title}</h3>
-
-              {/* CONTENT */}
               <p className="text-zinc-400 text-sm">
                 {isLong ? a.content.slice(0, 120) + "..." : a.content}
               </p>
-
-              {/* CATEGORY */}
               <span className="text-xs text-blue-400 block mt-2">
                 {a.category}
               </span>
-
-              {/* READ MORE (ONLY IF LONG) */}
               {isLong && (
                 <Link
                   href={`/post/${a.slug}`}
@@ -85,10 +75,7 @@ export default function ArticlesSection() {
           );
         })}
       </div>
-
-      {/* PAGINATION */}
       <div className="flex justify-center items-center gap-4 mt-10">
-        {/* PREV */}
         <button
           onClick={() => setPage((p) => Math.max(p - 1, 1))}
           className={`px-4 py-2 rounded ${
@@ -100,13 +87,9 @@ export default function ArticlesSection() {
         >
           Prev
         </button>
-
-        {/* PAGE INFO */}
         <span className="text-zinc-400">
           Page {page} of {totalPages}
         </span>
-
-        {/* NEXT */}
         <button
           onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
           className={`px-4 py-2 rounded ${
@@ -121,4 +104,4 @@ export default function ArticlesSection() {
       </div>
     </section>
   );
-}
+};
