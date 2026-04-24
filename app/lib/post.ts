@@ -106,5 +106,52 @@ export const articles: Article[] = [
     category: "Film",
     content:
       "A popular film theory suggests that the entire storyline is a reversed timeline, meaning the ending actually happens at the beginning. This completely changes how viewers interpret the movie."
+  }, {
+    id: 12,
+    title: "IPhone 18 Air Battery 2 Days?",
+    slug: "iphone-18-air-battery-leak",
+    desc: "Apple එකෙන් හොරෙන් එලියට ආපු Document එකක තියෙනවා",
+    category: "Tech",
+    content: "Weibo එකේ Leak උන Schematic එකකට අනුව iPhone 18 Air එකේ අලුත් Silicon-Carbon Battery එකක් එනවා. ඒකෙන් සාමාන්‍ය Use එකට දවස් 2ක් අල්ලනවා කියලා Test කරලා තියෙනවා. හැබැයි Phone එක 1mm ඝනකම් වෙනවලු. Worth ද?"
+  },
+  {
+    id: 13,
+    title: "බළලුන්ට මිනිස්සුන්ගේ අසනීප අඳුරගන්න පුළුවන්",
+    slug: "cats-detect-human-illness",
+    desc: "උන්ගේ නහයට සුවඳ 14x වැඩියෙන් දැනෙනවා",
+    category: "Facts",
+    content: "Research වලින් හොයාගෙන තියෙනවා බළලුන්ට Cancer, Diabetes, Epilepsy වගේ ලෙඩ වලට කලින් එන Chemical වෙනස්කම් සුවඳින් අඳුරගන්න පුළුවන්. උඹට අසනීපයක් නම් උන් ළඟට වෙලා ඉන්නේ ඒකයි. අද ඉඳන් බළලව Respect කරපන්."
+  },
+  {
+    id: 14,
+    title: "AI එකෙන් ඕනම Photo එකක් 4K කරන්න",
+    slug: "free-ai-photo-4k-upscaler",
+    desc: "Watermark නෑ, Sign-up නෑ, Limit නෑ",
+    category: "Tech",
+    content: "Krea.ai කියන Site එකට ගිහින් 'Upscale & Enhance' Tool එක ගනින්. Blur උන, Pixel උන ඕනම Photo එකක් AI එකෙන් 4K Quality එකට හදලා දෙනවා. Midjourney වලින් හදපු Image Print කරන්න ඕන නම් මේක පට්ට."
+  },
+  {
+    id: 15,
+    title: "නුවර වැවේ මකරෙක්?",
+    slug: "kandy-lake-crocodile-rumor",
+    desc: "වීඩියෝ එකක් Viral වෙනවා, ඇත්තද බොරුද?",
+    category: "Rumor",
+    content: "Social Media වල Share වෙන Video එකක නුවර වැවේ ලොකු සතෙක් පීනනවා වගේ පේනවා. Wildlife එකෙන් කියන්නේ ඒ Monitor Lizard කෙනෙක්, ඒත් මිනිස්සු කියන්නේ මකරෙක් කියලා. උඹ මොකද හිතන්නේ? Video එක Comment කරපන්."
+  },
+  {
+    id: 16,
+    title: "Interstellar එකේ වැරදුන Science එක",
+    slug: "interstellar-science-mistake",
+    desc: "Nolan ටත් වැරදුනා. Einstein ගෙන් අහන්න වුනා",
+    category: "film",
+    content: "Interstellar එකේ Black Hole එක ලඟට ගියාම කාලය Slow වෙන සීන් එක හරි. ඒත් Miller ගේ Planet එකේ Wave එක 1.2 KM උසයි. එච්චර ලොකු Wave එකක් එන්න නම් Planet එක හැම පැය 1කටම සැරයක් හොල්ලන්න ඕන. එතකොට කාලය Slow වෙන එක වැඩ කරන්නේ නෑ. Kip Thorne සර්ටත් මේක Miss උනා."
+  },
+  {
+    id: 17,
+    title: "Thama Film එක Stree 2 එකට Connect වෙන්නේ මෙහෙමයි",
+    slug: "thama-stree2-connection",
+    desc: "Post-Credit Scene එකේ හිටියේ කවුද?",
+    category: "film",
+    content: "Stree 2 ඉවර වෙලා Post-Credit Scene එකේ Sarkata ගේ ඔලුව අරන් යන Character එක Nawazuddin Siddiqui. එයා තමයි Thama එකේ Main Vampire. Maddock Universe එකේ දැන් භූතයෝ, Werewolf ලා ඉවර වෙලා Vampires ලා පටන් ගන්න යන්නේ. Avengers: Endgame වගේ Universe Cross-over එකක් 2028 දී එයි."
   }
 ];

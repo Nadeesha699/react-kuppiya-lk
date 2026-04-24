@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { fadeUp } from "../lib/motion";
 
 export const ArticlesSection = () => {
-  const categories = ["All", "Film", "Tech", "Facts"];
+  const categories = ["All", "Film", "Tech", "Facts","Rumor"];
 
   const [page, setPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("All");
