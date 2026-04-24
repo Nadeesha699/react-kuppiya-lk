@@ -15,7 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kuppiya",
   description: "Your daily bite of facts, tech rumors & hidden stories",
-  icons:"./logo.png"
+  icons: {
+    icon: "/logo.png",   
+    shortcut: "/logo.png",    
+    apple: "/logo.png",      
+  },
 };
 
 export default function RootLayout({

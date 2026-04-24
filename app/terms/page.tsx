@@ -5,7 +5,7 @@ export default function Terms() {
     <div className="min-h-screen bg-black text-white px-6 py-12 max-w-3xl mx-auto">
  <Link
         href="/"
-        className="inline-block mb-6 text-sm text-blue-500 hover:text-blue-400"
+        className="inline-block mb-6 text-sm text-blue-500 hover:text-blue-400 cursor-pointer"
       >
         ← Back to Home
       </Link>

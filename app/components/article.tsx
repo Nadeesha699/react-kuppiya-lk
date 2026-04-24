@@ -51,7 +51,7 @@ export const ArticlesSection = () => {
               setSelectedCategory(cat);
               setPage(1);
             }}
-            className={`px-4 py-1 rounded-full border transition ${
+            className={`px-4 py-1 rounded-full cursor-pointer border transition ${
               selectedCategory === cat
                 ? "bg-blue-500 border-blue-500"
                 : "border-zinc-700 text-zinc-400"
@@ -86,7 +86,7 @@ export const ArticlesSection = () => {
               {isLong && (
                 <Link
                   href={`/post/${a.slug}`}
-                  className="text-blue-400 text-xs mt-2 block hover:underline"
+                  className="text-blue-400 text-xs mt-2 block hover:underline cursor-pointer"
                 >
                   Read More →
                 </Link>
@@ -101,7 +101,7 @@ export const ArticlesSection = () => {
           className={`px-4 py-2 rounded ${
             page === 1
               ? "bg-zinc-700 text-zinc-500 cursor-not-allowed"
-              : "bg-zinc-800"
+              : "bg-zinc-800 cursor-pointer"
           }`}
           disabled={page === 1}
         >
@@ -115,7 +115,7 @@ export const ArticlesSection = () => {
           className={`px-4 py-2 rounded ${
             page === totalPages
               ? "bg-zinc-700 text-zinc-500 cursor-not-allowed"
-              : "bg-blue-500"
+              : "bg-blue-500 cursor-pointer"
           }`}
           disabled={page === totalPages}
         >

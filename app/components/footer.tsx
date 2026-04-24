@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../lib/motion";
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const FooterSection = () => {
   return (
@@ -18,9 +20,15 @@ export const FooterSection = () => {
           >
             <span className="text-blue-500">K</span>UPPIYA
           </motion.h1>
-          <p className="text-sm mt-2">
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="text-sm mt-2"
+          >
             Daily facts, tech rumors & hidden stories in just 5 minutes.
-          </p>
+          </motion.p>
         </div>
         <div>
           <motion.h2
@@ -75,13 +83,26 @@ export const FooterSection = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="text-sm"
+            className="text-sm mb-5"
           >
             Get daily updates of facts, tech rumors, and hidden stories from Sri
             Lanka & the world.
           </motion.p>
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="flex flex-row gap-5 cursor-pointer"
+          >
+            <FaFacebookF className="text-blue-500 hover:text-white" />{" "}
+            <FaWhatsapp className="text-green-400 hover:text-white" />
+            <FaLinkedinIn className="text-blue-400 hover:text-white" />
+            <MdEmail className="text-red-500 hover:text-white" />
+          </motion.div>
         </div>
       </div>
+
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -93,7 +114,10 @@ export const FooterSection = () => {
 
         <p className="mt-1">
           Developed by
-          <a className="text-blue-500 font-semibold"> Nadeesha Ruwandima</a>
+          <a className="text-blue-500 hover:text-blue-700 font-semibold cursor-pointer">
+            {" "}
+            Nadeesha Ruwandima
+          </a>
         </p>
       </motion.div>
     </footer>

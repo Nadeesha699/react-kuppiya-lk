@@ -22,9 +22,39 @@ export const HomeSection = () => {
         <img src="/logo.png" className="w-12 h-12 rounded-full" />
 
         <div className="sm:flex gap-8 text-sm hidden">
-          <a href="/">Home</a>
-          <a href="#about">About</a>
-          <a href="#articles">Articles</a>
+          <a
+            href="/"
+            className="relative ransition duration-300
+             after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+             after:w-0 after:h-[2px] after:bg-white
+             after:transition-all after:duration-300
+             after:-translate-x-1/2
+             hover:after:w-full"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="relative ransition duration-300
+             after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+             after:w-0 after:h-[2px] after:bg-white
+             after:transition-all after:duration-300
+             after:-translate-x-1/2
+             hover:after:w-full"
+          >
+            About
+          </a>
+          <a
+            href="#articles"
+            className="relative ransition duration-300
+             after:content-[''] after:absolute after:left-1/2 after:-bottom-1
+             after:w-0 after:h-[2px] after:bg-white
+             after:transition-all after:duration-300
+             after:-translate-x-1/2
+             hover:after:w-full"
+          >
+            Articles
+          </a>
         </div>
 
         <div className="flex flex-row gap-2 justify-center items-center">
@@ -45,7 +75,10 @@ export const HomeSection = () => {
               />
             )}
           </div>
-          <a href="#contact" className="px-5 py-1 bg-blue-500 rounded-full">
+          <a
+            href="#contact"
+            className="px-5 py-1 bg-blue-500 rounded-full hover:bg-blue-700 transition"
+          >
             Contact
           </a>
         </div>
