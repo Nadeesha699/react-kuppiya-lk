@@ -68,11 +68,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  },
-
-  verification: {
-    google: "PASTE_YOUR_GOOGLE_VERIFICATION_CODE_HERE",
-  },
+  }
 };
 
 export default function RootLayout({
