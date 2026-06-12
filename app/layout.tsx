@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Kuppiya",
     description:
       "Your daily bite of facts, tech rumors and hidden stories.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
 
   robots: {
